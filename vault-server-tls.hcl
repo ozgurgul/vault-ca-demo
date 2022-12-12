@@ -7,7 +7,7 @@ listener "tcp" {
   tls_cert_file = "./output/server-certs/vaultcert.pem"
   tls_key_file  = "./output/server-certs/vault_key.pem"
   # This is the certificate that client certs are signed with.  In this demo
-  # the same intermediate cert signs both Vault and Client certs.  But 
+  # the same intermediate cert signs both Vault and Client certs.  But
   # to show this differentiation, we use the ca out of the /client-certs/ dir
   tls_client_ca_file="./output/client-certs/ca.pem"
 }
