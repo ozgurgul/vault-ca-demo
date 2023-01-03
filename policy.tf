@@ -9,6 +9,6 @@ data "vault_policy_document" "list_update_secrets" {
   rule {
     path         = "secret/pki-kafka-*"
     capabilities = ["list","update"]
-    description  = "Allow List and Update on secrets/pki-kafka* "
+    description  = "Allow List and Update on secrets/pki-kafka-* "
   }
 }
